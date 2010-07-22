@@ -535,7 +535,7 @@ window.Modernizr = (function(window,doc,undefined){
           // we don't use `serif` and we don't use `monospace`
           // http://github.com/Modernizr/Modernizr/issues/closed#issue/39
           // http://neugierig.org/software/chromium/notes/2009/09/monospace-fonts-workaround.html
-          spn.setAttribute('style','font:99px _,arial,helvetica;position:absolute;visibility:hidden'); 
+          spn.setAttribute('style','font:99px _,arial,helvetica;position:absolute;visibility:hidden;height:0;overflow:hidden;'); 
       
           if  (!body){
             body = docElement.appendChild(doc.createElement(fontface));
